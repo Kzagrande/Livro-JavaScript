@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body{
+    background-color: #fff;
+
+    
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/cap3/img/mainImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1{
+    grid-area: h1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.3em;
+    margin: 0 auto ;
+    color: rgba(0, 0, 0, 0.781);
+    padding: 10px;
+}
+
+.header{
+    background-image: url(/cap3/img/textura.jpg);
+    border-radius: 12px;
+    z-index: 1;
+    grid-area: h1;
+    
+}
+
+
+
+.formContainer{
+    width: calc(100% - 20px);
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto);
+    background-color:pink;
+    border-radius: 12px;
+    grid-template-areas: 
+    "h1"
+    "name" 
+    "radio" 
+    "height"
+    "buttons" ;
+    gap: 10px;
+    
+
+    
+}
+
+
+.name{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    grid-area: name;
+    margin: 5px;
+
+}
+
+.name input{
+    width: 80%;
+    border:none;
+    height: 25px;;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 1.3rem;
+
+}
+
+.height{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    grid-area: radio;
+    margin:5px;
+    padding: 5px;
+}
+
+.height input{
+    width: 80%;
+    border:none;
+    height: 25px;;
+    border-radius: 15px;
+    font-size: 1.3rem;
+
+
+}
+
+.radio {
+    display: flex;
+    margin:10px;
+    grid-area: height;
+    font-size: 1.3rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.radio-fem{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+.radio-masc{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.button{
+    display: block ;
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3px;
+   margin: 10px auto;
+   background-color:sandybrown;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 500;
+   border-radius: 30px;
+   border: solid wheat;
+   cursor: pointer;
+
+    
+}

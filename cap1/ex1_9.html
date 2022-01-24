@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando porcentagem</title>
+</head>
+<body>
+    <script>
+
+        // elaborar um proggrama que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom(10%)e o valor total a ser pago
+
+
+        // Valors input
+
+        var digitaConta = Number (prompt("Digite o valor  da conta"));
+
+        // Processing and  calculate valors
+
+        var taxaGarcom = digitaConta * .10;
+        var totalConta = digitaConta + taxaGarcom;
+
+        // Show order and waiter percent
+
+
+        alert("Taxa do Garçom(10%) R$:" + taxaGarcom.toFixed(2) + "\n Total a Pagar R$:" + totalConta.toFixed(2));
+
+    </script>
+</body>
+</html>

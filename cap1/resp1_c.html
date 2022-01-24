@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cash or Installments</title>
+</head>
+<body>
+
+    <script>
+
+        /*  Develop a program for a store that reads the products prices and shows the payments options. Calculate and inform 
+        the  payment amouth in cash with 10% descount and the amouth in 3x
+         */
+
+
+         // input valors 
+
+         var productValor = Number(prompt("Enter with a product value"));
+         alert("10% descount in Products in cash  ")
+
+         // processing and calculate the values
+
+         var inCash =  productValor-(productValor*0.10);
+         var Installmentes =  productValor/3;
+
+         // show results 
+
+
+         alert("Product Value:$ " + productValor.toFixed(2)+ "\n In Cash:$ "+ inCash.toFixed(2)+ "\n or in 3x" + Installmentes.toFixed(2));
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body{
+    background-color: #fff;
+
+    
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/cap4/img/ex4_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+.formContainer{
+    width: calc(100% - 20px);
+    max-width: 500px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 15px;
+    background-image: url(/cap4/img/ex4_1-textura.jpg);
+    background-size: cover;
+    overflow: hidden;
+    z-index: 10;
+   
+    
+}
+
+
+
+.header img {
+
+    width: 100%;
+    height: 70px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    
+    position: absolute;
+    margin: 10px auto;
+    color: #1b1304;
+
+    
+}
+
+.inNumber{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    align-self: center;
+
+}
+
+.inNumber p{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    color: #1b1304;
+}
+
+
+.inNumber input{
+    width: 100%;
+    border:none;
+    height: 25px;;
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 1.3rem;
+
+}
+
+
+
+
+.btShow{
+    display: block ;
+    width: 60%;
+   background-color:#a5ddde;
+   color: #1b1304;
+   font-size: 1.3rem;
+   font-weight: 600;
+   border-radius: 30px;
+   border: solid #fff;
+   cursor: pointer;
+   margin: 0 auto;
+   padding: 4px;
+   opacity: 0.9;
+   
+  
+}
+
+.btShow2{
+    display: none;
+}
+
+
+.allOut{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    color: #1b1304;
+}
+
+
+
+@media screen and (max-width:478px){
+
+    .btShow{
+    display: block ;
+    width: 50%;
+    background-color:#a5ddde;
+   color: #1b1304;
+   font-size: 1.1rem;
+   font-weight: 500;
+   border-radius: 30px;
+   border: solid #fff
+;   cursor: pointer;
+   margin: 0 auto;
+   padding: 2px;
+   opacity: 0.9;
+    }
+
+
+
+
+    .btShow2{
+        display: block;
+        width: 50%;
+        background-color:#a5ddde;
+        color: #1b1304;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 30px;
+        border: solid #fff;
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 2px;
+        opacity: 0.9;
+
+    }
+
+    .btShow{
+        display: none;
+    }
+
+
+    .allOut{
+        margin: 7px;
+        display: flex;
+        justify-content: center;
+        color: #1b1304;
+        font-size: 1.0em;
+        
+    }
+
+
+    .formContainer{
+        gap:10px;
+    }
+
+}

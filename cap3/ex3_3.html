@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+
+    <script>
+
+        var district = prompt("What is your district ? ")
+        var shipping;
+
+        switch(district){
+            case "Cocaia":
+                shipping = 6.00;
+                break;
+
+                case "Bom Clima":shipping = 5.00
+                break;
+
+                case "São João":shipping = 10.00
+                break;
+                
+                case "Macedo":
+                case "Centro":shipping = 4.00
+                break;
+                
+                default:shipping = 12.00
+
+
+        }
+
+
+        alert("Your shipping is $: "+shipping.toFixed(2));
+    </script>
+    
+</body>
+</html>
+
+
